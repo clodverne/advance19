@@ -1,0 +1,213 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  -webkit-animation-name: anim-color;
+  -moz-animation-name: anim-color;
+  -o-animation-name: anim-color;
+  animation-name: anim-color;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -moz-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -o-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation: anim-color 2s easy 1s infinity reverse;
+  -moz-animation: anim-color 2s easy 1s infinity reverse;
+  -o-animation: anim-color 2s easy 1s infinity reverse;
+  animation: anim-color 2s easy 1s infinity reverse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-color {
+  0% {
+    background-color: gray;
+    margin-left: 0;
+  }
+
+  to {
+    background-color: purple;
+    margin-left: 400px;
+  }
+}
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.form-signin {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.form-signin a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: verdana;
+  color: #bbb;
+}
+
+.form-signin a:hover {
+  color: #000;
+}
+
+.popup-signin {
+  background-color: #fff;
+  display: none;
+  width: 34rem;
+  height: 35rem;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  z-index: 9;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.popup-signin input {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.popup-signin .btn {
+  width: 18rem;
+  height: 5rem;
+  background-color: #82c5c3;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Open Sans";
+  font-weight: 700;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.popup-signin .btn:focus {
+  outline: 0;
+}
+
+.popup-signin .btn:hover {
+  background-color: #343434;
+}
+
+.popup-signin h3,
+.popup-signin p {
+  color: #666;
+}
+
+.popup-signin_overlay {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.6);
+}
+
+.popup-signin_close {
+  color: #111;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: all .2s;
+  opacity: .6;
+}
+
+.popup-img_close:hover,
+.popup-signin_close:hover {
+  opacity: 1;
+  color: #fff;
+  text-decoration: none;
+}
+
+.img,
+.popup-img {
+  text-align: center;
+}
+
+.img {
+  margin-top: 3rem;
+}
+
+.img img {
+  width: 30%;
+  height: 30%;
+}
+
+.popup-img {
+  background-color: #fff;
+  display: none;
+  width: 40rem;
+  height: 45rem;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  z-index: 9;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.popup-img h4,
+.popup-img p {
+  color: #444;
+}
+
+.popup-img_overlay {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.6);
+}
+
+.popup-img_close {
+  color: #111;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: all .2s;
+  opacity: .6;
+}

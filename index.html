@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Modal Window</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+<div class="form-signin">
+  <a href="#modal-1" class="signin-link">Sign In</a>
+</div>
+<a href="#close" class="popup-signin_overlay"></a>
+<div class="popup-signin">
+  <a href="#close" class="popup-signin_close">&times;</a>
+  <form id="form" action="index.html">
+                  <h3>Вход в аккаунт</h3>
+                  
+
+                 
+                  <input class="form-control" id="input-name" name="name" type="text" placeholder="Имя или никнейм">
+                  
+                  
+                  <input class="form-control" id="input-email"  name="pas" type="text" placeholder="Пароль">
+                  <br>
+                  <button class="btn">Войти</button>
+                  
+                </form>
+
+</div>
+<div class="img">
+  <a href="#modal-2" class="img-link"><img src="img/fon-page.jpg" alt="" ></a>
+</div>
+<a href="#close" class="popup-img_overlay"></a>
+<div class="popup-img">
+  <a href="#close" class="popup-img_close">&times;</a>
+  <h4>Инь и ян</h4>
+  <p> В «Книге перемен» («И цзин») ян и инь служили для выражения светлого и тёмного, твёрдого и мягкого. В процессе развития китайской философии ян и инь все более символизировали взаимодействие крайних противоположностей: света и тьмы, дня и ночи, солнца и луны, неба и земли, жары и холода, положительного и отрицательного, четного и нечетного и т. д. Исключительно абстрактное значение инь-ян получили в спекулятивных схемах неоконфуцианства, особенно в учении о «ли» (кит. 禮) — абсолютном законе. Концепция о взаимодействии полярных сил инь-ян, которые рассматриваются как основные космические силы движения, как первопричины постоянной изменчивости в природе, составляет главное содержание большинства диалектических схем китайских философов. Учение о дуализме сил инь-ян — непременный элемент диалектических построений в китайской философии. В V-III вв. до н. э. в древнем Китае существовала философская школа инь ян цзя. Представления об инь-ян нашли также разнообразное применение в разработке теоретических основ китайской медицины, химии, музыки и т. д.
+
+Открытый в Китае несколько тысячелетий назад, этот принцип первоначально базировался на физическом мышлении. Однако по мере развития он стал более метафизическим понятием. В японской же философии сохранился физический подход, поэтому деление объектов по инь и ян свойствам у китайцев и японцев различаются[2]. В новояпонской религии оомото-кё это понятия божественных Идзу (огонь, ё) и Мидзу (вода, ин).
+
+Единая изначальная материя тайцзи порождает две противоположные субстанции — ян и инь, которые едины и неделимы. Первоначально «инь» означало «северный, теневой», а «ян» — «южный, солнечный склон горы». Позднее инь воспринималось как негативное, холодное, темное и женское, а ян — как позитивное, светлое, теплое и мужское начало.</p>
+
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      var signin = $('.signin-link');
+      var popupSignin = $('.popup-signin');
+      var closeSignin = $('.popup-signin_close');
+      var overlaySignin = $('.popup-signin_overlay');
+      var img = $('.img-link');
+      var popupImg = $('.popup-img');
+      var closeImg = $('.popup-img_close');
+      var overlayImg = $('.popup-img_overlay');
+
+      signin.click(function(){
+        popupSignin.fadeIn();
+        overlaySignin.fadeIn();
+      });
+      closeSignin.click(function(){
+        popupSignin.fadeOut();
+        overlaySignin.fadeOut();
+      });
+      
+      overlaySignin.click(function(){
+        overlaySignin.fadeOut();
+        popupSignin.fadeOut();
+      });
+
+      img.click(function(){
+        popupImg.fadeIn();
+        overlayImg.fadeIn();
+      });
+      closeImg.click(function(){
+        popupImg.fadeOut();
+        overlayImg.fadeOut();
+      });
+      
+      overlayImg.click(function(){
+        overlayImg.fadeOut();
+        popupImg.fadeOut();
+      });
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
